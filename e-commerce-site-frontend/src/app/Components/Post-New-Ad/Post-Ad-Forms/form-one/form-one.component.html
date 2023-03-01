@@ -1,0 +1,37 @@
+<form class="form_1">
+    <div class="Align-Box">
+        <div class="Post-Purpose">
+            <div>
+                <p>What do you want ?</p>
+
+                <div class="Options">
+                    <button *ngFor="let button of buttons" (click)="selectButton(button)" [ngClass]="{'selected': button.selected}"><i class={{button.icon}}></i>{{button.name}}</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Post-Location">
+            <p>Choose Location</p>
+
+            <div class="Select-Location">
+                <div class="Location-Dropdown">
+                    <label>Select your location</label>
+                    <div class="select-Map">
+                        map
+                        
+                    </div>
+                </div>
+
+                <div class="Current_Location">
+                    <input type="checkbox">
+                    <label>Use current location</label>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="Form-Handler">
+        <button (click)="nextForm()">Next</button>
+    </div>
+</form>
+

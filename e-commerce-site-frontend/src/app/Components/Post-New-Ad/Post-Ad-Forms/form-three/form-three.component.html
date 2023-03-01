@@ -1,0 +1,108 @@
+<form class="form_3">
+    <div class="Align-item-Form mt-4">
+        <div class="Form3-Fields">
+            <div class="Condition">
+
+                <label>Condition</label>
+
+                <div class="Condition-Status ms-1 mt-1 mb-3">
+                    <div class="Condition-Type me-5">
+                        <input type="radio">
+                        <p>&nbsp;Used</p>
+                    </div>
+    
+                    <div class="Condition-Type ms-5">
+                        <input type="radio">
+                        <p>&nbsp;New</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Item-Details">
+                <div class="Detail-Fiels mb-3">
+                    <label>Brand</label>
+                    <!-- <app-select-brand></app-select-brand> -->
+                </div>
+
+                <div class="Detail-Fiels mb-3">
+                    <label>Model</label>
+                    <!-- <app-select-model></app-select-model> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="Form3-Fields">
+            <div class="Detail-Fiels mb-3">
+                <label>Edition (optional)</label>
+                <input placeholder="Enter the edition">
+            </div>
+
+            <div class="Detail-Fiels mb-3">
+                <label>Features</label>
+                <input placeholder="Extra fetures">
+            </div>
+
+            <div class="Detail-Fiels mb-1">
+                <label>Price (Rs.)</label>
+                <input placeholder="Pick a good price">
+            </div>
+
+            <div class="Condition-Type mt-1">
+                <input type="checkbox">
+                <label>&nbsp;Negotiable</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="Description mt-2">
+        <div class="Align-This">
+            <label>Description</label>
+            <input>
+        </div>
+    </div>
+
+    <div class="Add-Item-Photo mt-4">
+        <div class="Align-This">
+            <label>Add photos</label>
+
+            <div class="Add-Photo-Box mt-2 mb-5">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="Ad-Photo">
+                            <i class="bi bi-plus-circle"></i>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="Ad-Photo">
+                            <i class="bi bi-plus-circle"></i>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="Ad-Photo">
+                            <i class="bi bi-plus-circle"></i>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="Ad-Photo">
+                            <i class="bi bi-plus-circle"></i>
+                            <p>Add</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Form-Handler">
+        <button (click)="previousForm()">Previous</button>
+        <button (click)="postAD()">Post Ad</button>
+    </div>
+</form>
+

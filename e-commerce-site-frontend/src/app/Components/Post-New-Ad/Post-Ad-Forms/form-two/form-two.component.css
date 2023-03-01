@@ -1,0 +1,61 @@
+.form_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.Align-Form{
+    display: flex;
+    flex-direction: row;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    width:80%
+}
+
+.categories button{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 14px;
+    padding-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    color: rgb(95, 95, 95);
+}
+
+.categories button img{
+    width:30px;
+    height: auto;
+}
+
+.categories button:hover{
+    border-color: rgb(162, 156, 209);
+}
+  
+.categories button.selected {
+    background-color: rgb(0, 0, 102);
+    color: aliceblue;
+}
+
+.Background img{
+    margin-top:35px;
+    position: absolute;
+    width:400px;
+    right:270px;
+    opacity: 20%;
+    
+}
+
+.categories p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+    color: rgb(63, 63, 63);
+}

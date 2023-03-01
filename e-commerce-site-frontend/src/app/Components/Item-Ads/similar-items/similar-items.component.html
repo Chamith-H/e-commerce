@@ -1,0 +1,62 @@
+<div class="Similar-Ads">
+    <div class="Ads-Title">
+        <div class="mt-4 mx-3">
+            <h4>Similar Ads</h4>
+            <hr>
+        </div>
+    </div>
+
+    <div class="Similar-Ads-List">
+        <div class="mx-4 mb-4">
+            <div class="row">
+                <div class="col-12 col-xl-6" *ngFor="let item of data">
+                    <div class="Single-Ad-Box">
+                        <div class="single-Ad py-1 mt-3" type="button" (click)="viewAd(item)">                                       
+                            <div class="Ad-Content">
+                                <div class="Add-Info">
+                                    <div class="Ad-Image">
+                                        <img src={{item.main_image}}>
+                                    </div>
+            
+                                    <div class="ps-2 pt-1">
+                                        <div class="Ad-Detail">
+                                            <h1>{{item.item_name}}</h1>
+                                            <h2>{{item.item_price}}</h2>
+                                            <h3>{{item.item_condition}}</h3>
+                                        </div>
+            
+                                        <div class="Ad-Location">
+                                            <div class="d-flex">
+                                                <div class="Location-Logo pe-1">
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                </div>
+            
+                                                <div class="Locations">
+                                                    <h4>{{item.district}}</h4>
+                                                    <h5>{{item.town}}</h5>
+                                                </div>
+                                            </div>                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="Ad-Posted-Time">
+                                    <p>{{item.posted_date}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Navigrations mt-5">
+                    <div class="Navigration-Buttons">
+                        <button class="Active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <span> . . . </span>
+                        <button><i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+               </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+.form_3{
+    width:100;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_3 label{
+    font-size: 14px;
+}
+
+.Align-item-Form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Condition{
+    display: flex;
+    flex-direction: column;
+}
+
+.Condition-Status{
+    display: flex;
+    flex-direction: row;
+}
+
+.Detail-Fiels{
+    display: flex;
+    flex-direction: column;
+}
+
+.Detail-Fiels input{
+    width:250px;
+    border-color: rgb(189, 189, 189);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.Detail-Fiels input::placeholder {
+    color: rgb(170, 170, 170);
+    font-style: italic;
+}
+
+.Condition-Type{
+    margin-top: -14px;
+    display: flex;
+}
+
+.Condition-Type p{
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.Condition-Type label{
+    font-size: 12px;
+}
+
+.Description{
+    width:100;
+    display: flex;
+    justify-content: center;
+}
+
+.Align-This{
+    width:77%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Description input{
+    width:100%;
+    border-color: rgb(189, 189, 189);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.Add-Item-Photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Ad-Photo{
+    width:100%;
+    height:100px;
+    background-color: rgb(251, 251, 251);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(219, 219, 219);
+}
+
+.Ad-Photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(182, 182, 182);
+}
+
+.Ad-Photo i{
+    font-size: 35px;
+}
+
+.Ad-Photo p{
+    font-size: 13px;
+    height: 0px;
+}

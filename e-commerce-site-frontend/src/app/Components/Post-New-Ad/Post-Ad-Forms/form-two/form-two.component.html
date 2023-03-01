@@ -1,0 +1,26 @@
+<form class="form_2 mt-4 mb-5">
+    <div class="Align-Form">
+        <div class="col-6">
+            <div class="categories">
+                <p>Select your Category</p>
+                <button *ngFor="let category of categories" (click)="selectCategory(category)" [ngClass]="{'selected': category.selected}">{{category.name}} <img src={{category.image}}></button>
+            </div>
+        </div>
+        
+        <div class="col-6">
+            <div *ngIf="show_subCategory" class="categories"> 
+                <p>Select your Sub category</p>
+                <button *ngFor="let sub_category of subCategories" (click)="selectSubCategory(sub_category)" [ngClass]="{'selected': sub_category.selected}">{{sub_category.name}} <img src=""> </button>
+            </div>
+        </div>
+        
+        <div *ngIf="!show_subCategory" class="Background">
+            <img src="../../../../../assets/Sample-png/pngegg.png">
+        </div>
+    </div>
+
+    <div class="Form-Handler">
+        <button (click)="previousForm()">Previous</button>
+        <button (click)="nextForm()">Next</button>
+    </div>
+</form>

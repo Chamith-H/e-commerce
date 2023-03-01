@@ -1,0 +1,18 @@
+<div class="Post-New my-5">
+    
+
+    <div class="Form-Lists">
+        <app-form-one *ngIf="show_FormOne"></app-form-one>
+        <app-form-two *ngIf="show_FormTwo"></app-form-two>
+        <app-form-three *ngIf="show_FormThree"></app-form-three>
+    </div>
+
+    <hr>
+
+    <div class="Form-Handdle">
+        <img *ngIf="counter==0" src="../../../../assets/Sample-png/Fr1.jpg">
+        <button *ngIf="counter!=0" (click)="navigateBack()">Back</button>
+        <button *ngIf="counter!=2" (click)="navigateNext()">Next</button>
+        <button *ngIf="counter==2" (click)="postAd()" class="Post-Ad-Btn">Post Ad</button>
+    </div>
+</div>

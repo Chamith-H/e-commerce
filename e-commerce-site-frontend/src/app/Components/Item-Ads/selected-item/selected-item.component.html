@@ -1,0 +1,111 @@
+<div class="Single-Item-Box py-2">
+    <div class="Top-Bar">
+        <div class="row my-3">
+            <div class="col-6">
+                <div class="Title ps-3">
+                    <h4>{{selectedData.item_name}}</h4>
+
+                    <div class="Title-Info">
+                        <p>{{selectedData.town}}, {{selectedData.district}}</p>
+                        <p>&nbsp;-&nbsp;</p>
+                        <p>{{selectedData.posted_date}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="Ad-Option">
+                    <button><i class="bi bi-share-fill"></i>&nbsp;Share</button>
+                    <button class="To-Cart"><i class="bi bi-cart-plus"></i>&nbsp;Add to cart</button>
+                </div>
+            </div> 
+        </div>
+        
+        <hr>
+    </div>
+
+    <div class="Content-Box">
+        <div class="Ad-Info">
+            <div class="row">
+                <div class="col-8 px-4">       
+                    <div class="row">
+                        <div class="Image-Contents">
+                            <div class="Main-Image">
+                                <img src={{selectedData.main_image}}>
+                            </div>
+                        </div>
+                        
+                        <div class="Sub-Images py-4 px-3">
+                            <div class="row px-2">
+                                <div class="col-3">
+                                    <div class="Single-Sub-Image">
+                                        <img src={{selectedData.sub_image_1}}>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="Single-Sub-Image">
+                                        <img src={{selectedData.sub_image_2}}>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="Single-Sub-Image">
+                                        <img src={{selectedData.sub_image_3}}>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="Single-Sub-Image">
+                                        <img src={{selectedData.sub_image_4}}>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Ad-State ps-3 mt-4">
+                        <h4>{{selectedData.item_price}}</h4>
+                        <h5>{{selectedData.item_condition}}</h5>
+
+                        <div class="Ad-Description">
+                            <h6>Description</h6>
+                            <p>{{selectedData.item_description}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="Side-Box">
+                        <div class="Contact-Info">
+                            <h4>{{selectedData.seller_name}}</h4>
+
+                            <div class="Call">
+                                <i class="bi bi-telephone-fill"></i>
+
+                                <div class="Number" type="button" (click)="showPhone()">
+                                    <h6>{{clickOn.Click_name}}</h6>
+                                    <p>{{clickOn.Click_detail}}</p>
+                                </div>
+                            </div>
+
+                            <div class="Call">
+                                <i class="bi bi-whatsapp"></i>
+
+                                <div class="Number">
+                                    <h6>Chat</h6>
+                                    <p>Click to chat with whatsapp</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Side-Ad mt-4">
+                            <img src="../../../../assets/Item-Images/Side-AD2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

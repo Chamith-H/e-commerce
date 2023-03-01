@@ -1,0 +1,9 @@
+.Ad-Banner-Right{
+    display: flex;
+    justify-content: end;
+}
+
+.Ad-Banner-Right img{
+    width:80%;
+    max-width: 160px;
+}

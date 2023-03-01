@@ -1,0 +1,52 @@
+<div class="Post-Ad-Page">
+    <div class="col-1 col-lg-2">
+        <div class="d-none d-lg-block sticky-top Banner">
+           <app-left-banner></app-left-banner>
+        </div>
+    </div>
+
+    <div class="col-10 col-lg-8">
+        <div class="Ad-Posting-Box px-5 py-4 my-5">
+            <div class="Posting-Header">
+                <div class="Box-Title">
+                    <h5>Post a new Ad</h5>
+                    <p>Select your option</p>
+                </div>
+            
+                <hr>
+                
+            </div>
+
+            <div class="Posting-Forms py-5">
+                <app-form-one 
+                    *ngIf="show.form_1" 
+                    (formOne_Emitter)="handdleForm($event)"
+                    (dataOne_Emitter)="collectData($event)">
+                </app-form-one>
+
+                <app-form-two 
+                    *ngIf="show.form_2" 
+                    (formTwo_Emitter)="handdleForm($event)"
+                    (dataTwo_Emitter)="collectData($event)">
+                </app-form-two>
+
+                <app-form-three 
+                    *ngIf="show.form_3" 
+                    (formThree_Emitter)="handdleForm($event)"
+                    (dataThree_Emitter)="collectData($event)"></app-form-three>
+            </div>
+        </div>
+
+        <!-- <div class="Ad-Gif pb-4">
+            <img src="../../../../assets/Ad-Baners/Bottom-Post ad.gif">
+            <img src="../../../../assets/Ad-Baners/Bottom-Post 2.gif">
+        </div> -->
+        
+    </div>
+
+    <div class="col-1 col-lg-2">
+        <div class="d-none d-lg-block sticky-top Banner">
+            <app-right-banner></app-right-banner>
+        </div>
+    </div>
+</div>

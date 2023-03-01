@@ -1,0 +1,27 @@
+.Sign-up-Page{
+    width:100%;
+    display: flex;
+    background-image: url(../../../../assets/Sign-Up/Sign-Up_Background.jpg);
+    background-size: cover;
+    background-position:left;
+}
+
+.Background-Effect{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 3, 0.712);
+}
+
+.Sign-Content{
+    width:100%
+}
+
+@media screen and (max-width: 576px) {
+    .Background-Effect{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

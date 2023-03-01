@@ -1,0 +1,76 @@
+.form_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.Align-Box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Post-Location{
+    display: flex;
+    flex-direction: column;
+}
+
+.Current_Location{
+    display: flex;
+    justify-content: start;
+}
+
+.Current_Location label{
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.Location-Dropdown label{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.Select-Location p{
+    margin-top: 7px;
+    height:6px
+}
+
+.Post-Contacts{
+    display: flex;
+    justify-content: center;
+}
+
+.Options{
+    display: flex;
+    flex-direction: column;
+}
+
+.Options button {
+    display: flex;
+    justify-content: start;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-top: 8px;
+    font-size: 14px;
+    padding-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    color: rgb(66, 66, 66);
+}
+
+.Options button:hover{
+    border-color: rgb(162, 156, 209);
+}
+  
+.Options button.selected {
+    background-color: rgb(0, 0, 102);
+    color: aliceblue;
+}
+
+.Options i{
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

@@ -1,0 +1,15 @@
+.Bottom-Banner{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.align{
+    width:100%;
+}
+
+.align img{
+    width:100%;
+}

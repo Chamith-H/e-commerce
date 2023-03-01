@@ -1,0 +1,12 @@
+.Top-Ad-Banner{
+    display: flex;
+    justify-content: center;
+}
+
+.align{
+    width:80%
+}
+
+.Top-Ad-Banner img{
+    width:100%
+}

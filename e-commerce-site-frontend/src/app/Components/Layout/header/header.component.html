@@ -1,0 +1,30 @@
+<nav class="Nav_Bar sticky-top">
+    <div class="Nav_Bar-Left">
+        <div class="Nav_Bar-Brand">
+            <button class="d-block d-md-none Togler-btn" (click)="show_SideBar()">
+                <img id="Toggle-icon" src="../../../../assets/Header/Toggle-Button.png"> 
+            </button>
+            <img type="button" (click)="goHome()" class="Nav-Brand ms-3" src="../../../../assets/Header/Company-Logo.png">
+        </div>
+        
+        <div class="Nav_Bar-Items">
+            <a type="button" class="Nav_Bar-Link d-none d-md-block" [routerLink]="['/show-items']" [queryParams]="{ selected: All_ads }">All Ads</a>
+            <p type="button" class="d-none d-md-block" (click)="changeLanguage()"><i class="bi bi-translate"></i>&nbsp;English</p>
+        </div>
+    </div>
+
+    
+    
+
+    <div class="Nav_Bar-Right">
+        <div class="Nav_Bar-Items me-3">
+            <a class="Nav_Bar-Link d-none d-md-block"><i class="bi bi-chat-square-text"></i>&nbsp;Chat</a>
+            <button id="Account-Btn" class="d-none d-md-block" (click)="show_AccountPopup()"><i class="bi bi-person-circle"></i>&nbsp;Account</button>
+        </div>
+
+        <button class="Post-AD-Btn" (click)="postAd()">POST NEW AD</button>
+    </div>
+
+    <app-sider *ngIf="show_side" (myEvent_1)="show_SideBar()" (myEvent_2)="show_AccountPopup()" class="Side-Panel d-md-none"></app-sider>
+    <app-account-popup *ngIf="show_Account" class="Account-Popup"></app-account-popup>
+</nav>

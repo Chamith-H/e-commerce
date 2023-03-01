@@ -1,0 +1,22 @@
+<div class="Category-Component">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" *ngFor="let category of data">
+            <div class="Single-Category my-3" type="button" (click)="showItems(category.name)">
+                <div class="Align-Category">
+                    <div class="Category-Image">
+                        <img src={{category.image}}>
+                    </div>
+            
+                    <div class="Category-Name">
+                        <h5>{{category.name}}</h5>
+                        <p>{{category.count}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

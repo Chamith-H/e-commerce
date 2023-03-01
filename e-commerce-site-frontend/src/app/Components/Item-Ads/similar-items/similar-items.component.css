@@ -1,0 +1,169 @@
+.Similar-Ads{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(221, 221, 221);
+    border-radius: 6px;
+    box-shadow: 0 3px 3px 0 rgba(6, 4, 119, 0.295);
+    background-color: rgb(255, 255, 255);
+}
+
+.Ads-Title{
+    width:100%
+}
+
+.Ads-Title hr{
+    margin-top: -4px;
+    color: rgb(112, 112, 112);
+}
+
+.Ads-Title h4{
+    font-size: 21px;
+    color: rgb(0, 1, 78);
+}
+
+.Similar-Ads-List{
+    width:100%;
+}
+
+.Single-Ad-Box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.single-Ad{
+    width:96%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: rgb(216, 216, 216);
+    box-shadow: 0 3px 3px 0 rgba(6, 4, 119, 0.295);
+}
+
+.single-Ad:hover{
+    width:98%;
+    box-shadow: 0 3px 3px 0 rgba(2, 0, 119, 0.747);
+}
+
+.Ad-Image{
+    height:95px;
+    width:95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ad-Image img{
+    height: 83px;
+    width: 85px;
+}
+
+.Ad-Content{
+    display: flex;
+    flex-direction: row;
+    width:96%;
+    justify-content: space-between;
+}
+
+.Add-Info{
+    display: flex;
+    flex-direction: row;
+}
+
+.Ad-Posted-Time{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.Ad-Content h1{
+    font-size: 14px;
+    color: rgb(1, 0, 82);
+}
+
+.Ad-Content h2{
+    margin-top: -8px;
+    font-size: 12px;
+    color: rgb(18, 88, 168);
+}
+
+.Ad-Content h3{
+    margin-top: -6px;
+    font-size: 12px;
+    color: rgb(202, 0, 0);
+}
+
+.Ad-Content h4{
+    font-size: 11px;
+    color: rgb(119, 119, 119);
+}
+
+.Ad-Content h5{
+    margin-top: -9px;
+    font-size: 11px;
+    height: 10px;
+    color: rgb(160, 160, 160);
+}
+
+.Ad-Content p{
+    height: 6px;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.Ad-Location i{
+    color: rgb(180, 180, 180);
+}
+
+.Navigrations{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Navigration-Buttons{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navigration-Buttons button{
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: rgba(9, 0, 63, 0.541);
+    color: rgba(9, 0, 63, 0.562);;
+    border-width: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Navigration-Buttons button:hover{
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: rgba(9, 0, 63, 0.541);
+    color: rgb(255, 255, 255);;
+    border-width: 1px;
+    background-color: rgba(1, 0, 83, 0.699);
+}
+
+.Navigration-Buttons .Active{
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: rgba(9, 0, 63, 0.541);
+    color: rgb(255, 255, 255);;
+    border-width: 1px;
+    background-color: rgb(24, 0, 92);
+}

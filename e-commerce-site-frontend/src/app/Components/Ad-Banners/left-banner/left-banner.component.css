@@ -1,0 +1,10 @@
+.Side-Bannner-Left{
+    display: flex;
+    justify-content: start;
+    
+}
+
+.Side-Bannner-Left img{
+    width:80%;
+    max-width: 160px;
+}

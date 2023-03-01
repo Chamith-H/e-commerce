@@ -1,0 +1,53 @@
+<div class="Home">
+    <div class="Image-Box">
+        <div class="ms-0 ms-md-4">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 mt-5 pt-5">
+                    <div class="Website-Description pb-2 text-center px-5 px-md-0 ps-md-5 pt-md-2 text-md-start">
+                        <h1 class="">The best e-commerce platform in Sri Lanka, because this is a shop o'clock some where.</h1>
+                        <p class="">You can post an advertisement or buy something</p>
+                    </div>
+            
+                    <div class="Search-Box mt-4">
+                        <div class="container-fluid d-flex justify-content-center justify-content-md-start ps-md-5">
+                            <div class="col-7">
+                                <input class="Search-Home-Field" placeholder="What are you looking for ?">
+                            </div>
+
+                            <div class="col-2">
+                                <button class="Search-Home-Btn" [routerLink]="['/show-items']" [queryParams]="{ selected: sample }">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class="Categories d-flex justify-content-center">
+       
+        <div class="Category-Items my-5 mx-5">
+            <div class="Selection-Title">
+                <h2>Browse items by category</h2>
+                <p class="d-none d-md-block">Select a category you want</p>
+            </div>
+            
+            <hr>
+
+            <app-category></app-category>
+        </div>
+    </div>
+
+    <div class="Paragraph mt-5 mb-1">
+        <div class="col-10">
+            <h3>Every purchase will be made with plessure</h3>
+            <p class="mb-5 pb-3">
+                We work with global brands and have created an application for you to do your shopping easily and quickly. Many companies have forgotten they sell to actual people. Humans care about the entire experience, not just the marketing or sales or service. To really win in the modern age, you must solve for humans.
+            </p>
+
+            <app-bottom-banner></app-bottom-banner>
+        </div>
+    </div>
+    
+</div>
+
